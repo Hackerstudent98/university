@@ -3,6 +3,7 @@
 void array_rand(int *list, int count)
 {
 	int i = 0;
+	
 	srand( time(NULL) );
 	while(--count > 0)
  	{
