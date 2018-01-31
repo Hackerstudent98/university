@@ -62,10 +62,19 @@ trình viên cho tới sử dụng nhiều đa lõi
 Cuối cùng máy chủ phiến là tương đối gần đây phát triển trong nhiều bộ đa vi xử lý mạch , I/O mạch và mạng mạch là nơi trong
 cùng , sự khác biệt giữa những  cái này và truyền thống hệ thống đa là mỗi bộ xử lý lưỡi là mỗi bộ vi xử lý lưỡi dao khởi động một cách độc lập và chạy riêng của nó hệ điều hành  Một số bo mạch phiến-máy chủ cũng có nhiều bộ xử lý,làm mờ các đường giữa các loại máy tính. Về bản chất, các máy chủ này bao gồm nhiều hệ thống đa xử lý độc lập.
 
-1.3.3 
+1.3.3 Nhóm lại hệ thống 
 
+Một dạng khác của bộ đa vi xử lý hệ thống là hệ thống cluster , tập hợp cùng nhiều CPU . Clustered Hệ thống khác 
+từ bộ đa vi xử lý hệ thống mô tả trong 1.3.2 trong đó chúng sáng tác của 2 hoặc nhiều hệ thống cá nhân hoặc nhiều
+nút tham gia cùng nhau. Như là hệ thống xem xét lỏng lẻo . Mỗi cây có thể là đơn bộ vi xư lý hoặc là nhiều lõi 
+hệ thống , chúng ra nên ghi chú định nghĩa của clustered không phải là khái niệm , nhiều gói hàng thương mại vật lộn để xác định một hệ thống nhóm và tại sao một dạng là tốt hơn những cái khác , Thông thường được chấp nhận định nghĩa là clustered hệ 
+thống chia sẽ lưu trữ và được liên kết chặt chẽ thông qua một mạng nội bộ LAN (như mô tả trong Chương 17) hoặc kết nối nhanh hơn, chẳng hạn như InfiniBand
 
-
+Clustering thường là sử dụng cung cấp khả năng cao dịch vụ , chính là dịch vụ sẽ tiếp tục mỗi sự kiện , nếu một hoặc n
+nhiều hệ thống trong cluster thất bại , Nói chung là chúng tôi đạt được khả dụng bởi thêm một tầng dư trong hệ thống
+một lớp của cluster phần mềm chạy tại cluser nút , mỗi nút Mỗi nút có thể giám sát một hoặc nhiều người khác (over the LAN)
+Nếu theo dỡi máy móc thất bại , theo dõi máy móc lấy sở hữa kho của nó khởi động lại ứng dụng đang chạy trên máy không thành công
+Người sử dụng và khách hàng của các ứng dụng chỉ nhìn thấy một gián đoạn ngắn dịch vụ.
 
 
 
