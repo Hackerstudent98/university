@@ -39,3 +39,47 @@ Bộ đa vi xử lý có 3 điểm nâng cao
   của chi phí là phát sinh trong việc giữ cho tất cả phần công việc chính xác . Chi phí này, cộng với ganh đua cho chia sẻ
   tài nguyên làm giảm lợi ích kỳ vọng từ bộ vi xử lý bổ sung . Đơn giản N lập trình viên 
   làm việc cùng với nhâu những phải N thời gian số lượng công việc mà một lập trình viên sẽ tạo ra.
+  
+bộ đa vi xử lý thêm CPUs máy tính mạnh hơn , nếu CPU có có 1 tích hợp bộ nhớ điểu khiển 
+thêm CPUs cũng tăng số lượng địa chỉ bộ nhớ trong điều khiển , Hoặc đường , bộ đa vi xử lý có thể gây ra một hệ thống thay đổi mô hình truy cập bộ nhớ từ cùng một kiểu truy cập bộ nhớ (UMA) , để truy cập bộ nhớ không đồng đều (NUMA) . UMA được định nghĩa
+như là vị trị trong đó truy cập bất kỳ RAM từ CPU mất cùng khoảng một thời gian , Cùng NUMA vài phần trong bộ nhớ có thể
+mất nhiều thời gian hơn để truy cập hơn những khu vực khác , tạo một hiệu suất kém , Hệ điều hành có thể giảm thiểu NUMA
+hình phạt thông qua quản lý tài nguyên
+
+Gần đây nổi bật trong thiết kế CPU là bao gồm nhiều lõi tính toán tại 1 chip đơn , như là bộ đa vi xử lý hệ thống là được
+gọi là đa lõi . chúng sẽ hiểu quả hơn nhiều chíp với 1 lõi đơn bởi vì trong chip sẽ giao nhanh hơn là việc các chip giao 
+giao tiếp với nhâu  , Thêm nữa , một chip với nhiều lõi sử dụng đáng kể ít hao tốn nguồn so với nhiều nhiều lõi đơn với chip
+
+Đây là điều quan trọng chứ ý trong khi nhiều lõi trong hệ thống là bộ đa vi xử lý hệ thống , không phải tất cả bộ đa vi xử l
+lý hệ thống là đa lõi , chúng sẽ thấy trong phần 1.3.3 , Trong phạm vi bảo hiểm của chúng tôi của bộ đa vi xử lý hệ thống 
+trong văn bản này , trừ khi chúng ta nói khác đi , nói chung là chúng ta sử dụng đồng thời nhiều thuật ngữ đa lõi , mà loại trừ một số hệ thống đa.
+
+trong hình 1.7 , chúng ta thấy một cùng lõi thiết kế với 2 lõi  trong cùng một chip , trong thiết kế , mỗi lõi có riêng 
+thanh ghi thiết lập cũng như địa phương riêng của nó bộ nhớ cache. Một số thiết kế sử dụng chia sẻ cache hoặc sự kết hợp giữa địa phương và chia sẻ lưu trữ ,Ngoài các cân nhắc về mặt kiến trúc như là cache , bộ nhớ và bus kết nối , đa lõi trong CPUs xuất hiện
+trong hệ điều hành nhừ là N chuẩn bộ bộ vi xử lý ,đây đặc trưng gây áp lực tại hệ điều hành thiết kết và ứng dụng của lập t
+trình viên cho tới sử dụng nhiều đa lõi 
+
+Cuối cùng máy chủ phiến là tương đối gần đây phát triển trong nhiều bộ đa vi xử lý mạch , I/O mạch và mạng mạch là nơi trong
+cùng , sự khác biệt giữa những  cái này và truyền thống hệ thống đa là mỗi bộ xử lý lưỡi là mỗi bộ vi xử lý lưỡi dao khởi động một cách độc lập và chạy riêng của nó hệ điều hành  Một số bo mạch phiến-máy chủ cũng có nhiều bộ xử lý,làm mờ các đường giữa các loại máy tính. Về bản chất, các máy chủ này bao gồm nhiều hệ thống đa xử lý độc lập.
+
+1.3.3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
